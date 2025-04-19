@@ -1,6 +1,6 @@
 ﻿namespace PumlGenWrapper;
 
-partial class Form1
+partial class MainForm
 {
     /// <summary>
     ///  Required designer variable.
@@ -138,7 +138,7 @@ partial class Form1
         btnExecute.TabIndex = 9;
         btnExecute.Text = "Execute";
         btnExecute.UseVisualStyleBackColor = true;
-        btnExecute.Click += btnExecute_Click;
+        btnExecute.Click += OnExecuteClicked;
         //
         // lblInputPath
         //
@@ -175,7 +175,7 @@ partial class Form1
         btnBrowseInput.TabIndex = 13;
         btnBrowseInput.Text = "Browse...";
         btnBrowseInput.UseVisualStyleBackColor = true;
-        btnBrowseInput.Click += btnBrowseInput_Click;
+        btnBrowseInput.Click += OnBrowseInputClicked;
         //
         // btnBrowseOutput
         //
@@ -185,7 +185,7 @@ partial class Form1
         btnBrowseOutput.TabIndex = 14;
         btnBrowseOutput.Text = "Browse...";
         btnBrowseOutput.UseVisualStyleBackColor = true;
-        btnBrowseOutput.Click += btnBrowseOutput_Click;
+        btnBrowseOutput.Click += OnBrowseOutputClicked;
         //
         // chkRunSeparate
         //
@@ -197,7 +197,7 @@ partial class Form1
         chkRunSeparate.Text = "Run Separate for Each Dir";
         chkRunSeparate.UseVisualStyleBackColor = true;
         //
-        // Form1
+        // MainForm
         //
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
